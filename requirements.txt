@@ -1,0 +1,17 @@
+python-dotenv
+langchain
+langgraph
+tavily-python
+flask
+markdown
+langchain[google-genai]
+bs4
+scrapy
+requests 
+beautifulsoup4
+webdriver-manager
+selenium
+finnhub-python
+langchain-groq
+PyPDF2
+yfinance
