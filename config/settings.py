@@ -22,7 +22,10 @@ try:
         reload: bool = True
         log_level: str = "info"
         
-        cors_origins: List[str] = ["http://localhost:3000", "*"]
+        cors_origins: List[str] = [
+            "http://localhost:3000",
+            "https://finvest-jbmuljwql-dishant1804s-projects.vercel.app"
+        ]
         cors_credentials: bool = True
         cors_methods: List[str] = ["GET", "POST", "PUT", "DELETE"]
         cors_headers: List[str] = ["*"]
