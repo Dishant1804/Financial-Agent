@@ -1,14 +1,14 @@
 from beanie import Document
 from pydantic import EmailStr, Field
-from datetime import datetime
+from datetime import datetime, timezone
 import bcrypt
 
 class User(Document):
     username: str = Field(..., min_length=3, max_length=50)
     email: EmailStr
     password_hash: str
-    created_at: datetime = Field(default_factory=lambda: datetime.now(datetime.timezone.utc))
-    updated_at: datetime = Field(default_factory=lambda: datetime.now(datetime.timezone.utc))
+    created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+    updated_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
     
     class Settings:
         collection = "users"
