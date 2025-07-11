@@ -4,6 +4,10 @@ langgraph
 tavily-python
 flask
 markdown
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
 langchain[google-genai]
 bs4
 scrapy
@@ -15,3 +19,11 @@ finnhub-python
 langchain-groq
 PyPDF2
 yfinance
+pymupdf
+typing-extensions
+pandas
+numpy
+motor
+beanie
+pydantic[email]
+bcrypt
