@@ -19,6 +19,7 @@ class User(Document):
         salt = bcrypt.gensalt()
         return bcrypt.hashpw(password.encode('utf-8'), salt).decode('utf-8')
     
-    def verify_password(self, password: str) -> bool:
+    @staticmethod
+    def verify_password(password: str, password_hash: str) -> bool:
         """Verify password against hash"""
-        return bcrypt.checkpw(password.encode('utf-8'), self.password_hash.encode('utf-8'))
+        return bcrypt.checkpw(password.encode('utf-8'), password_hash.encode('utf-8'))
