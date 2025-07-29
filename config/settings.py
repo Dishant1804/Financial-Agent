@@ -24,7 +24,8 @@ try:
         
         cors_origins: List[str] = [
             "http://localhost:3000",
-            "https://finvest-rosy.vercel.app"
+            "https://finvest-rosy.vercel.app",
+            "https://finvest.dishant.site"
         ]
         cors_credentials: bool = True
         cors_methods: List[str] = ["GET", "POST", "PUT", "DELETE"]
